@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms-1</title>
+</head>
+<body>
+   <input list="fun">
+    <datalist id="fun">
+        <option value="soccer">soccer</option>
+        <option value="football">football</option>
+        <option value="baseball">baseball</option>
+    </datalist>
+    <br>
+    <br>
+    <select name="" id="fun">
+        <option value="">soccer</option>
+        <option value="">football</option>
+        <option value="">baseball</option>
+    </select>
+    <br>
+    <br>
+    <meter min=0 max=10 value="7"></meter>
+    <progress min=0 max=10 value=4></progress>
+    <input type="range" id="nOP" min=1 max=10 value=5><span id="people"></span>
+    <script>
+        input=document.querySelector('#nOP');
+        span=document.querySelector('span');
+        input.oninput = function(e){
+            val=this.value;
+            span.innerHTML = val;
+        };
+    </script>
+    <input type="hidden">
+    <input type="color">
+    <input type="file">
+    <input type="search">
+    <input type="reset">
+</body>
+</html>
