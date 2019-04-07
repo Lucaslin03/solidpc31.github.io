@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #block{
+            border: solid;
+            height: 50px;
+            width: 400px;
+        }
+        #inline-block{
+            display: inline-block;
+            border: solid red;
+        }
+        #none{
+            font-size: 4rem;
+            display: none;
+        }
+        #hide{
+            font-size: 4rem;
+            visibility: hidden;
+        }
+        span{
+            border: solid blue;
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+    <li>w/out style (block)</li>
+    <li>no height</li>
+    <li>width=page width</li>
+    <li>have to set width and height</li>
+    </ul>
+    <div id="block"></div>
+    <ul>
+        <li>w/out style (inline-block)</li>
+        <li>no length</li>
+        <li>no height</li>
+        <li>have to set w/h</li>
+    </ul>
+    <div id="inline-block"></div>
+    <div id="inline-block"></div>
+    <br>
+    <ul>
+        <li>w/out style (inline)</li>
+        <li>no width</li>
+        <li>cannot set width or height</li>
+        <li>only can be changed by text size</li>
+    </ul>
+    <span>yeyeey</span>
+    <br>
+    <div id="none">yerheiriehigifshi</div>
+    <div id="hide">hhdishdsiueis</div>
+    <p>dog r kewl</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border radius prove</title>
+    <style>
+        #container{
+            width: 400px;
+            height: 500px;
+            border: solid 20px;
+            border-top-left-radius: 150px;
+            border-bottom-left-radius: 150px 75px;
+        }
+        #item1{
+            width: 260px;
+            height: 260px;
+            border: solid lightseagreen 20px;
+            border-radius: 150px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+        #item2{
+            width: 260px;
+            height: 110px;
+            border: solid darkgreen 20px;
+            border-radius: 150px/75px;
+            position: absolute;
+            top: 398px;
+            left: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="item1"></div>
+        <div id="item2"></div>
+    </div>
+    
+</body>
+</html>
