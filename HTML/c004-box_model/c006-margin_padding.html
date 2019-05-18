@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin padding</title>
+    <style>
+        #block{
+            width: 300px;
+            height: 100px;
+            background-color: tan;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            margin-right: 999999999999999999999px;
+        }
+        #inline-block{
+            width: 300px;
+            height: 100px;
+            background-color: darkslategray;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px; /*5110px*/
+            margin-left: 50px;
+            display: inline-block;
+        }
+        #inline{
+            height: 300px;
+            width: 100px;
+            background-color: darkcyan;
+            margin-left: 50px;
+            margin-right: 50px; /*5110px*/
+            margin-left: 50px;
+            display: inline;
+        }
+        #span{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+   <!-- has width: margin-r has no effect-->
+   <!-- no width: margin-r has effect-->
+    <div id="block"></div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem tenetur officia ducimus dolorem possimus provident harum porro explicabo. Explicabo laboriosam quis nobis amet a, error labore quasi odit adipisci temporibus.</div>
+<!-- increasing margin-r will push another element in line to the next line, after that there is no effect   -->
+    <div id="inline-block"></div>
+    <div id="inline-block"></div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ea ducimus, quisquam voluptate rem at cum delectus eligendi earum vel labore consectetur architecto nisi, tempora perferendis soluta ipsa. Eos, magnam.</div>
+    <div id="inline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero hic ipsa soluta doloribus. <span>Velit debitis sequi beatae molestias quibusdam fugit sint ut quod provident a vero repellat, maiores, amet ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid accusamus nemo distinctio ducimus, temporibus perspiciatis, magni atque obcaecati totam expedita saepe ullam eligendi quia, assumenda vero, explicabo delectus cupiditate. Odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> Quibusdam debitis, repellendus perspiciatis at enim tenetur consequuntur accusantium voluptas nostrum similique quis quas dolorum eligendi aperiam recusandae eos pariatur perferendis iure!</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>radial gradient</title>
+    <style>
+         div {
+            width: 800px;
+            height: 600px;
+            background: radial-gradient(white, black);
+            background: radial-gradient(circle, white, black);
+            background: radial-gradient(circle 200px, white, black);
+            background: radial-gradient(circle 200px at 300px 200px, white, black);
+            background: radial-gradient(circle closest-corner at 300px 200px, white, black);
+            background: radial-gradient(circle farthest-side at 300px 200px, white, black);
+            background: radial-gradient(circle 200px at 300px 200px, white, blue, black);
+            background: radial-gradient(circle 200px at 300px 200px, white 25%, blue, black);
+        }
+        /*
+        shape:circle,ellipse
+        size: 100px, closest/farthest-side/corner, etc
+        origin pos: at top/right/left/bottom, at 200px 100px etc.
+        color: white black/green red/etc.
+        */
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

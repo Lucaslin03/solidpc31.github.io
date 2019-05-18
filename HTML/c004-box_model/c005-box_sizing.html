@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box sizing</title>
+</head>
+<style>
+/*
+    *{
+        box-sizing: border-box;
+    }
+*/
+    #container{
+        width: 600px;
+        height: 400px;
+        border: solid blue;
+    } 
+    #item1,#item2{
+        height: 200px;
+        width: 300px;
+        display: inline-block;
+    }
+    #item1{
+        background-color: magenta;
+        border: solid 20px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #item2{
+        background-color: cyan;
+        margin-left: -4px;
+        border: solid 20px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="item1"></div>
+        <div id="item2"></div>
+    </div>
+</body>
+</html>

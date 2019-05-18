@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>posiiton</title>
+    <style>
+        p{
+            font-size: 4rem;
+            margin: 0px;
+        }
+        body{
+            height: 5000px;
+        }
+        #container{
+            width: 800px;
+            height: 600px;
+            background: linear-gradient(to right,lime, aqua);
+            border: double tomato; 
+        }
+        #item1,#item2,#item3{
+            width: 300px;
+            height: 200px;;
+        }
+        #item1{
+            border: yellow solid 10px;
+            /*relative to its original position*/
+/*            position: relative;*/
+/*            left: 50px;*/
+        }
+        #item2{
+            border: red solid 10px;
+/*            position: absolute;*/
+/*            left: 200px;*/
+        }
+        #item3{
+            border: blueviolet solid 10px;
+            /*always relative to viewport*/
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item1"></div>
+        <p>under item1</p>
+        <div id="item2"></div>
+        <p>under item2</p>
+        <div id="item3"></div>
+    </div>
+</body>
+</html>
